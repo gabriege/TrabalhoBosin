@@ -1,6 +1,8 @@
 
 package br.unipar.livrariapoo.model;
 
+import br.unipar.livrariapoo.model.Cliente;
+
 public class Vendas {
     
     private int qtdLivros;

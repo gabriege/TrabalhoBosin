@@ -1,10 +1,16 @@
+
+
 package br.unipar.br.unipar.livrariapoo;
+
 
 import br.unipar.livrariapoo.model.Cliente;
 import br.unipar.livrariapoo.model.Livro1;
 import br.unipar.livrariapoo.model.Livro2;
 import br.unipar.livrariapoo.model.Livro3;
+import br.unipar.livrariapoo.model.Pagamento1;
+import br.unipar.livrariapoo.model.Pagamento2;
 import br.unipar.livrariapoo.model.Vendas;
+
 
 
 
@@ -25,7 +31,7 @@ public class Main {
         descricao.setEstoque_01(80);
         descricao.setPreco(98.00);
         descricao.Status1();
-        System.out.println( descricao.toString());
+        
         Livro2 descricao2 = new Livro2();
         
         System.out.println("***********************************************");
@@ -51,13 +57,58 @@ public class Main {
         descricao3.setEstoque_03(70);
         descricao3.setPreco_03(85.00);
         descricao3.Status3();
+        System.out.println("***********************************************");
         
         Cliente cliente = new Cliente("06789546200", 
                 "Matheus", "Rua Thomas Gonzaga, 1502 "
                         + "- Pioneira - Toledo- PR - Brasil");
         
         Vendas vendas = new Vendas();
+        
         vendas.setCliente(cliente);
+        vendas.setQtdLivros(100);
+        vendas.setQtdEstoque(100);
+        vendas.setVlPreco(98.00);
+        
+        
+        Pagamento1 cartaocredito = new Pagamento1();
+        
+        System.out.println("***********************************************");
+        cartaocredito.setValor(98);
+        cartaocredito.setNumerocartao(90964869);
+        cartaocredito.setCodigoseguranca(510);
+        cartaocredito.setDatavalidade("dez");
+        cartaocredito.setNometitular("james");
+        
+        
+        
+        
+        
+        
+        Pagamento2 pagamento2 = new Pagamento2();
+        
+        pagamento2.setChavePix("dennis@gmail.com");
+        pagamento2.setDescricao("tipo de conta banco do brasil");
+        pagamento2.setValor(98);
+        
+        
+        
+        
+        
+        
+        
+        
+       
+       
+        
+       
+        
+        
+        
+        
+        
+        
+        
         
         
          
